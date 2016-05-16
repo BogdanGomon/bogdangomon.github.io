@@ -1,0 +1,213 @@
+
+@-webkit-keyframes logo{
+from{-webkit-transform:rotate(0);}
+50%{-webkit-transform:rotate(-360deg);}
+to{-webkit-transform:rotate(-360deg);}
+}
+@-moz-keyframes logo{
+from{-moz-transform:rotate(0);}
+50%{-moz-transform:rotate(-360deg);}
+to{-moz-transform:rotate(0);}
+}
+@-o-keyframes logo{
+from{-o-transform:rotate(0);}
+50%{-o-transform:rotate(-360deg);}
+to{-o-transform:rotate(0);}
+}
+@keyframes logo{
+from{transform:rotate(0);}
+50%{transform:rotate(-360deg);}
+to{transform:rotate(0);}
+}
+
+.logo {
+	-webkit-animation:logo 2s;
+	-moz-animation:logo 2s;
+	-o-animation:logo 2s;
+	 animation:logo 2s;
+}
+
+.logo:hover {
+	-webkit-animation:logo 2s;
+	-moz-animation:logo 2s;
+	-o-animation:logo 2s;
+	 animation:logo 2s;
+}
+
+body {
+  background: #f9f9f9;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 46px;
+  width: 968px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 6px 0px rgba(153,153,153,1);
+-moz-box-shadow: 0px 0px 6px 0px rgba(153,153,153,1);
+box-shadow: 0px 0px 6px 0px rgba(153,153,153,1);
+}
+
+/*HEADER*/
+.header {
+  padding-top: 50px;
+}
+
+logo {
+  padding-bottom: 40px;
+
+}
+
+h1 {
+  padding-bottom: 16px;
+}
+
+ul {
+  padding: 0;
+}
+
+.menu {
+position: relative;
+overflow: hidden;
+background: #5e5e5e; /* Old browsers */
+background: -moz-linear-gradient(top,  #5e5e5e 0%, #444343 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #5e5e5e 0%,#444343 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #5e5e5e 0%,#444343 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', endColorstr='#444343',GradientType=0 ); /* IE6-9 */
+
+}
+
+.menu li {
+  float: left;
+  list-style: none;
+}
+
+.menu a {
+  color: #fff;
+  line-height: 40px;
+  padding: 0 40px;
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.menu a:hover {
+border: #838383 1px solid;
+line-height: 38px;
+padding: 0 39px;
+background: #4a4a4a; /* Old browsers */
+background: -moz-linear-gradient(top,  #4a4a4a 0%, #2e2e2e 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #4a4a4a 0%,#2e2e2e 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #4a4a4a 0%,#2e2e2e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#2e2e2e',GradientType=0 ); /* IE6-9 */
+}
+
+/*CONTENT*/
+.content {
+  position: relative;
+  overflow: hidden;
+}
+
+.unit_image {
+  overflow:hidden;
+}
+
+.unit_image img {
+ -moz-transition: all 0.5s ease-out;
+ -o-transition: all 0.5s ease-out;
+ -webkit-transition: all 0.5s ease-out;
+ }
+
+.unit_image img:hover{
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ }
+
+.sidebar {
+  float: left;
+  width: 240px;
+}
+
+.side_menu {
+  border: #c8c8c8 1px solid;
+}
+
+.side_menu{
+  line-height: 37px;
+  color: #ffffff;
+  padding-left: 20px;
+}
+
+.s_menu {
+  text-decoration: none;
+  color: #656363;
+  display: block;
+  border: #c8c8c8 1px solid;
+  line-height: 37px;
+  background: #ffffff;
+  padding-left: 20px;
+  margin-bottom: -1px;
+  transition: 0.3s all;
+}
+
+.s_menu:hover {
+  background-color: #f9f9f9;
+    padding-left: 32px;
+    color: #2c2c2c;
+
+}
+
+.sales_unit {
+  float: right;
+  width: 680px;
+  padding-top: 15px;
+}
+
+.unit_image {
+  padding: 40px 0;
+  border: #c8c8c8 1px solid;
+  text-align: center;
+
+}
+
+.description {
+  padding: 30px 0 0 2px;
+  text-align: justify;
+}
+
+/*FOOTER*/
+.footer {
+  padding: 50px 0;
+}
+
+.footer_menu {
+  position: relative;
+  overflow: hidden;
+  background: #e1e1e1;
+}
+
+.footer_menu li {
+  float: left;
+  list-style: none;
+  line-height: 40px;
+
+}
+
+.footer_menu a {
+
+  display: block;
+  color: #2c2c2c;
+  text-decoration: none;
+  padding: 0 50px;
+}
+
+.footer_menu a:hover {
+  text-decoration: underline;
+}
+
+.footer_menu .copyrights {
+  float: right;
+  padding-right: 26px;
+}
