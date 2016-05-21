@@ -1,208 +1,270 @@
-/*rotating logo*/
-@-webkit-keyframes logo{
-from{-webkit-transform:rotate(0);}
-50%{-webkit-transform:rotate(-360deg);}
-to{-webkit-transform:rotate(-360deg);}
-}
-@-moz-keyframes logo{
-from{-moz-transform:rotate(0);}
-50%{-moz-transform:rotate(-360deg);}
-to{-moz-transform:rotate(0);}
-}
-@-o-keyframes logo{
-from{-o-transform:rotate(0);}
-50%{-o-transform:rotate(-360deg);}
-to{-o-transform:rotate(0);}
-}
-@keyframes logo{
-from{transform:rotate(0);}
-50%{transform:rotate(-360deg);}
-to{transform:rotate(0);}
-}
-
-.logo {
-	-webkit-animation:logo 2s;
-	-moz-animation:logo 2s;
-	-o-animation:logo 2s;
-	 animation:logo 2s;
-}
-
-/*main section*/
-
-body {
-  background: #f9f9f9;
-  font-family: Tahoma, Arial, sans-serif;
-}
-
-.wrapper {
-  margin: 0 auto;
-  padding: 0 46px;
-  width: 968px;
-  background: #fff;
-  -webkit-box-shadow: 0px 0px 6px 0px rgba(153,153,153,1);
-  -moz-box-shadow: 0px 0px 6px 0px rgba(153,153,153,1);
-  box-shadow: 0px 0px 6px 0px rgba(153,153,153,1);
-}
-
-/*HEADER*/
-.header {
-  padding-top: 50px;
-}
-
-logo {
-  padding-bottom: 40px;
-
-}
-
-h1 {
-  padding-bottom: 16px;
-}
-
-ul {
+*{
+  margin: 0;
   padding: 0;
 }
 
-.menu {
-position: relative;
-overflow: hidden;
-background: #5e5e5e; /* Old browsers */
-background: -moz-linear-gradient(top,  #5e5e5e 0%, #444343 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #5e5e5e 0%,#444343 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #5e5e5e 0%,#444343 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e5e5e', endColorstr='#444343',GradientType=0 ); /* IE6-9 */
+body {
+  height: 1060px;
+  font-family: "Tahoma", "Arial", sans-serif;
+}
+
+.wrapper {
+  background-color: #fff;
+  height: 1025px;
+  margin-left: 140px;
+  width: 1000px;
+  box-shadow: 0px 5px 16px 1px rgba(0,0,0,0.75);
+}
+
+
+/*HEADER*/
+
+header {
+  border-bottom: 1px solid #128aa7;
+  height: 175px;
+}
+
+.logo {
+  float: left;
+  height: 175px;
+  width: 600px;
+  background-color: #fff;
+}
+
+.contacts_and_countries {
+  float: right;
+  height: 175px;
+  padding-right: 22px;
+}
+
+.contacts {
+  padding-left: 195px;
+}
+
+.contacts h4 {
+  font-weight: bold;
+  color: #128aa7;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+.contacts p {
+  color: #128aa7;
+  font-size: 12px;
+  line-height: 16px;
 
 }
 
-.menu li {
-  float: left;
+.countries {
+  padding-top: 37px;
+}
+
+ul {
+  display: block;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
-.menu a {
-  color: #fff;
-  line-height: 40px;
-  padding: 0 40px;
-  display: block;
-  text-decoration: none;
-  font-size: 15px;
+li {
+  text-align: -webkit-match-parent;
 }
 
-.menu a:hover {
-border: #838383 1px solid;
-line-height: 38px;
-padding: 0 39px;
-background: #4a4a4a; /* Old browsers */
-background: -moz-linear-gradient(top,  #4a4a4a 0%, #2e2e2e 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #4a4a4a 0%,#2e2e2e 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #4a4a4a 0%,#2e2e2e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4a4a4a', endColorstr='#2e2e2e',GradientType=0 ); /* IE6-9 */
+.countries ul li {
+  display: inline-block;
 }
 
-/*CONTENT*/
-.content {
-  position: relative;
-  overflow: hidden;
-}
-
-.unit_image {
-  overflow:hidden;
-}
-
-.unit_image img {
- -moz-transition: all 0.5s ease-out;
- -o-transition: all 0.5s ease-out;
- -webkit-transition: all 0.5s ease-out;
- }
-
-.unit_image img:hover{
- -webkit-transform: scale(1.1);
- -moz-transform: scale(1.1);
- -o-transform: scale(1.1);
- }
-
-.sidebar {
-  float: left;
-  width: 240px;
-}
-
-.side_menu {
-  border: #c8c8c8 1px solid;
-}
-
-.side_menu{
-  line-height: 37px;
-  color: #ffffff;
-  padding-left: 20px;
-}
-
-.s_menu {
-  text-decoration: none;
-  color: #656363;
-  display: block;
-  border: #c8c8c8 1px solid;
-  line-height: 37px;
-  background: #ffffff;
-  padding-left: 20px;
-  margin-bottom: -1px;
-  transition: 0.3s all;
-}
-
-.s_menu:hover {
-  background-color: #f9f9f9;
-    padding-left: 32px;
-    color: #2c2c2c;
+.countries a {
+  color: #128aa7;
+  font-size: 10px;
+  display: inline-block;
 
 }
 
-.sales_unit {
-  float: right;
-  width: 680px;
-  padding-top: 15px;
+
+.flag_india {
+  padding: 45px 15px 10px 7px;
+  background: url("../img/flag_india.png") no-repeat;
 }
 
-.unit_image {
-  padding: 40px 0;
-  border: #c8c8c8 1px solid;
+.flag_nepal {
+  padding: 45px 15px 8px 7px;
+  background: url("../img/flag_nepal.png") no-repeat;
+}
+
+.flag_tibet{
+  padding: 45px 15px 8px 7px;
+  background: url("../img/flag_tibet.png") no-repeat;
+}
+
+.flag_bhutan {
+  padding: 45px 9px 10px 8px;
+  background: url("../img/flag_bhutan.png") no-repeat;
+}
+
+.flag_sri-lanka {
+  padding: 45px 6px 8px 0px;
+  background: url("../img/flag_sri-lanka.png") no-repeat;
+  background-position-x: 7px;
+}
+
+.flag_maldives {
+  padding: 45px 15px 8px 0px;
+  background: url("../img/flag_maldives.png") no-repeat;
+
+}
+
+.wide_image{
+  border-bottom: 1px solid #128aa7;
+  height: 237px;
+}
+
+/*NAVIGATION*/
+
+.nav_menu {
+  background: #373737;
+  background: linear-gradient(to top, #373737, #313131);
+  height: 28px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid white;
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.80);
+  -moz-box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.80);
+}
+
+ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+ul:after {
+    display: block;
+    content: ' ';
+    clear: both;
+    float: none;
+}
+ul.menu > li {
+    float: left;
+    position: relative;
+}
+ul.menu li:hover {
+background-color: none;
+
+}
+
+ul.menu > li > a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 60px;
+    padding: 5px 0 5px 0;
+    vertical-align: middle;
+    text-decoration: none;
+    color: white;
+}
+ul.menu > li > a:hover {
+    color: #c1c1c1;
+}
+
+ul.submenu {
+    display: none;
+    position: absolute;
+    width: 150px;
+    top: 29px;
+    left: 50px;
+    background-color: white;
+    -webkit-box-shadow: 1px 5px 11px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 5px 11px -2px rgba(0,0,0,0.75);
+    box-shadow: 1px 5px 11px -2px rgba(0,0,0,0.75);
+}
+ul.submenu > li {
+    display: block;
+}
+ul.submenu > li > a {
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px;
+    color: white;
+    background-color: #303030;
+    text-decoration: none;
+}
+ul.submenu > li > a:hover {
+    text-decoration: underline;
+}
+
+ul.menu > li:hover > ul.submenu {
+    display: block;
+}
+
+.menu i {
+  font-size: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #424c43;
   text-align: center;
-
 }
 
-.description {
-  padding: 30px 0 0 2px;
-  text-align: justify;
+p {
+  font-size: 12px;
+  color: #424c43;
 }
 
-/*FOOTER*/
-.footer {
-  padding: 50px 0;
+/* CONTENT */
+
+section p {
+  padding: 0 25px 15px 15px;
+  line-height: 22px;
 }
 
-.footer_menu {
-  position: relative;
-  overflow: hidden;
-  background: #e1e1e1;
+section h3 {
+  padding: 5px 0 5px 0;
 }
 
-.footer_menu li {
+/*left side*/
+.information {
   float: left;
-  list-style: none;
-  line-height: 40px;
-
+  background-color: #edeef0;
+  width: 205px;
+  border-right: 1px solid #c7cacf;
+  height: 510px;
 }
 
-.footer_menu a {
+/*right side*/
 
-  display: block;
-  color: #2c2c2c;
-  text-decoration: none;
-  padding: 0 50px;
-}
-
-.footer_menu a:hover {
-  text-decoration: underline;
-}
-
-.footer_menu .copyrights {
+.news {
   float: right;
-  padding-right: 26px;
+  background-color: #edeef0;
+  width: 205px;
+  border-left: 1px solid #c7cacf;
+  height: 510px;
+}
+
+
+/*center empty block*/
+.article {
+  padding: 1px 20px 20px 20px;
+  float: left;
+}
+
+.info_section:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Copyright */
+footer {
+padding-top: 8px;
+}
+
+footer p {
+  font-size: 12px;
+  font-weight: 500;
+  color: white;
+  text-align: center;
 }
